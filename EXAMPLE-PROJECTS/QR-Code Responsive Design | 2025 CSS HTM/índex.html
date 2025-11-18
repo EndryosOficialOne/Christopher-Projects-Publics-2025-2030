@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+   </head>
+   <style>
+      body {
+      background: #d5e1ef;
+      }
+      .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      }
+      .card {
+      width: 250px;
+      height: 400px;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: -5px 10px 25px 0 rgba(0,0,0,0.05);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      }
+      .qr-card {
+      width: 250px;
+      height: 250px;
+      background: green;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: center;
+      align-items: center
+      }
+      .qr-code:hover {
+      transform: scale(1.2);
+      transition: all 0.3s ease-in-out
+      }
+      .container-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      text-align: center;
+      }
+      .outfit-400 {
+      font-family: "Outfit", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      }
+      .outfit-700 {
+      font-family: "Outfit", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      }
+      .title {
+      font-size: 20px;
+      font-weight: bold;
+      color: #333;
+      }
+      .description {
+      margin-top: 10px;
+      font-size: 16px;
+      color: #666;
+      }
+      #qr-image {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+      object-position: center;
+      }
+   </style>
+   <body>
+      <div class="container">
+         <div class="card">
+            <img id="qr-image" src="https://bloxxy20-examples.netlify.app/qr%20code/image.png" alt="QR Code"/>
+            <div class="container-text">
+               <span class="title outfit-700">Improve your front-end skills by building projects.</span>
+               <span class="description outfit-400">  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level.</span>
+               <br>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
